@@ -66,6 +66,21 @@ h2 ~ p {
   padding: 0 3vw;
   font-size: 0.8rem;
 }
+.home-section h2 {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.home-section h4 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.home-section .post-header {
+  text-align: center;
+}
+.home-section .blog-posts {
+  margin: auto;
+  width: 75%;
+}
 
 /* HEADER STYLES */
 .header {
@@ -224,6 +239,11 @@ h2 ~ p {
 .hero-content .social-link:hover {
   background-color: #000;
   color: #fff;
+}
+.half-hero {
+  background-position: center center;
+  background-size: cover;
+  height: 40vh;
 }
 
 /* SOCIAL STYLES */
@@ -402,4 +422,55 @@ h2 ~ p {
   height: 2.5em;
   margin: 0 0 0 0.5em;
   vertical-align: middle;
+}
+.post {
+  width: 100%;
+}
+.post-content,
+.post-footer {
+  margin: auto;
+  max-width: 40em;
+  width: 85vw;
+}
+.pull-left {
+  float: left;
+  margin: 2em 2em 2em -2%;
+}
+.pull-right {
+  float: right;
+  margin: 2em -2% 2em 2em
+}
+.post-aside {
+  background-color: rgba(0, 0, 0, 0.01);
+  float: right;
+  margin: 0 0 2em 2em;
+  padding: 2em;
+}
+.post .post-header {
+  margin-bottom: 2.5em;
+  text-align: center;
+}
+.post-content {
+  font-size: 1.1rem;
+}
+.post-footer {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  font-style: italic;
+  font-size: 0.8em;
+  margin-top: 3em;
+  padding-top: 2em;
+}
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  .half-hero {
+    display: none;
+  }
 }
